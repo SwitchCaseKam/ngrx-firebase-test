@@ -1,0 +1,31 @@
+<div class="counter-buttons-array">
+    <button 
+        class="counter-buttons-array__single-button"
+        [ngStyle]="{'background-color': 'green'}"
+        (click)="increment()"
+    >increment</button>
+
+    <button 
+        class="counter-buttons-array__single-button"
+        [ngStyle]="{'background-color': 'red'}"
+        (click)="decrement()"
+    >decrement</button>
+    
+    <button 
+        class="counter-buttons-array__single-button"
+        [ngStyle]="{'background-color': 'blue'}"
+        (click)="reset()"
+    >reset</button>
+
+    <button 
+        class="counter-buttons-array__single-button"
+        [ngStyle]="{'background-color': 'purple'}"
+        (click)="pow()"
+    >pow ^2</button>
+
+    <button 
+        class="counter-buttons-array__single-button"
+        [ngStyle]="{'background-color': 'orange'}"
+        (click)="sqrt()"
+    >sqrt</button>
+</div>

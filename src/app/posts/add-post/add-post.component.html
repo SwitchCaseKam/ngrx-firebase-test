@@ -1,0 +1,9 @@
+<form class="add-post-form" [formGroup]="addPostForm" (ngSubmit)="addPost()">
+    <input formControlName="author">
+    <input formControlName="title">
+    <input formControlName="content">
+    
+    <button type="submit" [hidden]="shouldDisplayUpdateButton" [disabled]="addPostForm.invalid">Add</button>
+    <button (click)="updatePost()" [hidden]="!shouldDisplayUpdateButton" [disabled]="addPostForm.invalid">Update</button>
+    <button (click)="cancelUpdatePost()" [hidden]="!shouldDisplayUpdateButton" [disabled]="addPostForm.invalid">Cancel</button>
+</form>

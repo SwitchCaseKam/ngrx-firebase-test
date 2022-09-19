@@ -1,0 +1,8 @@
+.counter-info {
+    display: flex;
+    justify-content: center;
+}
+
+.counter-info__value {
+    font-size: 3em;
+}
